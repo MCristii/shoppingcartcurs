@@ -20,6 +20,7 @@ def category_prodcut_list(request, categoryid = 1 ):
         'categories': categories
     }
     return render(request, 'categoryproductlist.html', context)
+
 def product_detail(request, productid):
     id = productid
     produs = Product.objects.get(pk=int(id))
